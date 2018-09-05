@@ -23,3 +23,16 @@ REST - used to merge a list of function arguments into an array
 function sortArgs[...args]{
     return args.sort();
 }
+
+DESTRUCTURING
+[a,b] = ['Hello', 'World']
+{name} = {name: 'Max', age: 20}
+age //undefined
+
+//create-react-app react-app // create the app
+
+registerServiceWorker();//below ReactDOM
+The service worker is a web API that helps you cache your assets and other files so that when the user is offline or on slow network, he/she can still see results on the screen, as such, it helps you build a better user experience, that's what you should know about service worker's for now. It's all about adding offline capabilities to your site.
+
+Compiled react
+return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'header element'));
