@@ -36,3 +36,6 @@ The service worker is a web API that helps you cache your assets and other files
 
 Compiled react
 return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'header element'));
+
+onclick --> javascript but in jsx --> onClick={}
+follow standard Handler with functionname
