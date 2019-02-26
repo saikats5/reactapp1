@@ -38,4 +38,40 @@ Compiled react
 return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'header element'));
 
 onclick --> javascript but in jsx --> onClick={}
-follow standard Handler with functionname
+follow standard Handler with functionname, don't add () on click handler, this will execute immediately
+setState is provided by React.Component
+
+react hooks in React 16
+
+class App extends Component {
+    state = {
+        test1: [],
+        test2: 'sometext'
+    }
+}
+
+import React, { useState } from 'react';
+const app = props => {
+    const arr = //const [ nameState, setName ] = useState({  //returns 2 elements array //1st object, 2nd function to change the                                 object
+        persons: [
+            { name: 'max', age: 22 },
+            { name: 'mat', age: 23 }
+        ],
+        otherState: 'sometext'
+    })
+
+    //useState({otherState: 'some other text'});
+    //const [otherState, setOtherState] = useState('some other other text');
+
+    const clickHandler = () => {
+        setName({
+            persons: [
+                { name: 'maxy', age: 22 },
+                { name: 'maty', age: 23 }
+            ],
+            otherState: nameState.otherState
+        })
+    }
+}
+
+//setName will completely replace the state, otherstate will be removed
