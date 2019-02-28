@@ -75,3 +75,8 @@ const app = props => {
 }
 
 //setName will completely replace the state, otherstate will be removed
+
+Stateful components are also called 'smart components'/'container components'
+
+onClick={this.clickHandle.bind(this, 'Max!')}
+onClick ={()=>this.clickHandle('Max!!')} //not recommended
