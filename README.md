@@ -79,4 +79,11 @@ const app = props => {
 Stateful components are also called 'smart components'/'container components'
 
 onClick={this.clickHandle.bind(this, 'Max!')}
-onClick ={()=>this.clickHandle('Max!!')} //not recommended
+onClick ={()=>this.clickHandle('Max!!')} //not recommended //inefficient as recat rerenders
+
+only ternary works not if inside {} of jsx //? : null
+
+copy array to const before manupulating of state
+key is required for list to work properly with virtual dom
+
+radium helps us to write inline styles with psuedo code and media queries
